@@ -2,7 +2,7 @@
 #include <cmath>
 
 AWGNChannel::AWGNChannel(double Var)
-	: distribution(0.0, sqrt(Var))
+	: distribution(0.0, sqrt(Var/2.0))	// Так как шум комплексный для каждой из частей дисперсия в 2 раза меньше
 {
 }
 
